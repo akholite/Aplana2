@@ -9,7 +9,7 @@ public class Zadacha4_2 {
         int weight = 0;
         double price = 0;
 
-        System.out.println("Состав новогоднего подарка:");
+        System.out.println("Состав подарка:");
 
         for (Sweet sweet : christmasGift) {
             System.out.println(sweet.toString());
