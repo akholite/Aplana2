@@ -54,6 +54,12 @@ public class Zadacha3 {
             }
 
             System.out.println("Длина самого длинного из заданных слов: " + max);
+            System.out.println("Слова данной длины в массиве:");
+
+            for (String word : words) {
+                if (word.length() == max)
+                    System.out.println(word);
+            }
         }
         else
             System.out.println("Некорректный параметр");
