@@ -40,9 +40,18 @@ public class Zadacha4_1 {
         }
 
         if (neg & pos) {
-            n = array[indmin];
-            array[indmin] = array[indmax];
-            array[indmax] = n;
+            min = array[indmin];
+            max = array[indmax];
+            System.out.println("Минимальное положительное число: " + min);
+            System.out.println("Максимальное отрицательное число: " + max);
+
+            for (int i = 0; i < array.length; i++)
+            {
+                if (array[i] == min)
+                    array[i] = max;
+                else if (array[i] == max)
+                    array[i] = min;
+            }
 
             System.out.println("Массив после замены:");
             for (int i = 0; i < size; i++) {
