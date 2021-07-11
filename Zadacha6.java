@@ -10,6 +10,7 @@ public class Zadacha6 {
         public static void main(String[] args) throws FileNotFoundException {
 
             //если кириллица не читаются, необходимо убедиться, что кодировка = utf-8
+            //также надо убедиться, что в файле нет невидимых символов
             File dataFile = new File("text.txt");
             Scanner reader = new Scanner(dataFile);
             SortedMap<String, Integer> wordFrequency = new TreeMap<String, Integer>();
